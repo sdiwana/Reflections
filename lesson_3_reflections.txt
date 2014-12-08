@@ -1,0 +1,24 @@
+Q1: When would you want to use a remote repository rather than keeping all your work local?
+A1: When I am using someone else's branch and when I am using GitHub.  For GitHub the remote repository is like the staging area.
+
+Q2: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+A2: You pull changes when you are ready with your code, and not before.
+
+Q3: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+A3:  
+    - Clones copies a repository locally and creates a remote connection called origin that points back to local repository.  It is suitable for large projects and can be used by each developer on the project.
+    - Branches are inside a repository and commits stay within that branch until you merge the branch to master.  Each developer can branch out many times to accomodate logical changes on the cloned or forked copies of repositories.
+    - Forks are master copies from a server (e.g. GitHub) and does not copy the history,  Other developers can pull changes from it, but can not push changes to it.  When the changes are ready, developer pushes it to local remote repository and requests the main repository to pull his/her changes.  It is good for public projects, as well as collaborations, etc.  Provides a safe environment.
+
+Q4: What is the benefit of having a copy of the last known 
+state of the remote stored locally?
+A4: So if the network is down, you can still work on your project and commit is locally until you are ready to commit it to remote repository.
+
+Q5: How would you collaborate without using Git or GitHub? What 
+would be easier, and what would be harder?
+A5.  Using GoogleDoc for documents to perserve versions.  SVN, but GIT seems to have better features, like distributed environment, manual update as it does avoid commit without messages.
+
+Q6: When would you want to make changes in a separate branch 
+rather than directly in master? What benefits does each 
+approach have?
+A6: I believe you should always make changes in a branch, test it then commit to Master.  If you directly change master, guess you see your changes faster, and have latest files, but getting latest master in branch solves that problem to a large extent..

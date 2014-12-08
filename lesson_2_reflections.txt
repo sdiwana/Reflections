@@ -1,0 +1,20 @@
+Q1: What happens when you initialize a repository? Why do you need to do it?
+A2: git init when executed from the local folder intended for the repository, creates a hiddeen .git file locally which contains the metadata for the folder.  
+
+Q2: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A2: Working directory is common to every programmer taking part in the project, and basically a production directory.  Staging area is separate for each programmer who 'add' files to be commited to staging area.  Each programmer can add logically related file changes to the staging area before commiting them altogether to the working directory.  Also, provides a stop before finally committing to working area.
+
+Q3: How can you use the staging area to make sure you have one commit per logical change?
+A4: You keep adding files that have logically related changes, to staging area, before commit to working area.
+
+Q4: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A4: Branches can allow logical division of functions, very helpful for organization.
+
+Q5: How do the diagrams help you visualize the branch structure?
+A5: Totally confused.  Can see the branching on the log command, still was not sure which id belonged to which branch, would be helpful if they showed the branch names, also.
+
+Q6: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A6: First, I am having a very hard time accepting the idea of two people working on same file at the same time, projects or files should not get organized that way.  If you merge two branches, it shows all 'conflicts' between files, that once resolved, can be committed together.  The two merge creates a new node.
+
+Q7: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A7: Somehow missed learning about automatic merge.  Taking it at face value, I think manual merge is better as it provides more control, and does not break the build.
